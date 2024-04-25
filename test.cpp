@@ -145,6 +145,26 @@ void searchData(){
                 cout << "Data Berhasil Ditambahkan" << endl;
                 system("pause");
                 system("cls");
+                  case 2 :
+                if (listEmpty())
+                {
+                    cout << "List Kosong" << endl;
+                    system("pause");
+                    system("cls");
+                }
+
+                int nim;
+                cout << "Masukan NIM : ";
+                cin >> nim;
+                if (deleteNode(nim)) {
+                    cout << "nim : " << nim << " berhasil dihapus" << endl;
+                    system("pause");
+                    system("cls");
+                }
+                else
+                    cout << "Data tidak ditemukan" << endl;
+                break;
+
 
 
 
