@@ -126,6 +126,10 @@ void searchData(){
         cout << "data tidak ditemukan" << endl;
     }
 }
+ int pilihan;
+    do
+    {
+        try
 
 
 
