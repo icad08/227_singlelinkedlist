@@ -111,6 +111,22 @@ void searchData(){
         system("cls");
         return;
     }
+     else {
+        int nim;
+        cout << "Masukan NIM : ";
+        cin >> nim;
+        Node* currentNode = START;
+        while (currentNode != NULL) {
+            if (currentNode -> noMhs == nim) {
+                cout << "NIM : " << currentNode -> noMhs << ", Nama : " << currentNode -> name << endl;
+                return;
+            }
+            currentNode = currentNode -> next;
+        }
+        cout << "data tidak ditemukan" << endl;
+    }
+}
+
 
 
 
